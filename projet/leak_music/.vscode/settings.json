@@ -1,0 +1,6 @@
+{
+    "workbench.editor.wrapTabs": false,
+    "editor.suggest.showStatusBar": true,
+    "problems.showCurrentInStatus": false,
+    "workbench.statusBar.visible": true
+}

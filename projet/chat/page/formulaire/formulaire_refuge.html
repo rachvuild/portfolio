@@ -1,0 +1,68 @@
+<html >
+<head>
+
+  <link rel="stylesheet" href="../../css/connexion.css">
+     
+</head>
+
+<body>
+  <section class="headers">
+  
+    <div class=" headers">
+      <div class="heads">
+        <a class="button" href="../admin.html">espace admin</a>
+    <h1> Le petit formulaire refuge</h1>
+    </div>
+    <div class="heade">
+     
+      <a class="button" href="../connexion/connexion_refuge.html">se connecter</a>
+     
+    </div>
+    </div>
+  </section>
+<section class="formulaire">
+  <form method=POST action="../../php/formulaire/formulairephp_refuge.php">
+  <label for="nom_refuge">Entrez un nom</label>
+  <input type="text" name="nom_refuge" id="nom_refuge"><br><br>
+  <label for="adresse_refuge">Entrez une adresse</label>
+  <input type="text" name="adresse_refuge" id="adresse_refuge"><br><br>
+  <label for="cp_refuge">Entrez un code postale</label>
+  <input type="text" name="cp_refuge" id="cp_refuge"><br><br>
+  <label for="numero_refuge">Entrez un numero de téléphone</label>
+  <input type="text" name="numero_refuge" id="numero_refuge"><br><br>
+  <label for="mail_refuge">Entrez une adresse e-mail</label>
+  <input type="text" name="mail_refuge" id="mail_refuge"><br><br>
+  <label for="num_refuge">Entrez le numero du refuge </label>
+  <input type="number" name="num_refuge" id="num_refuge"><br><br>
+  <label for="race">Entrez sa ajouter/ modifier?</label>
+  <select name="action_refuge" id="action_refuge" required><br>
+    <option class="" value="" disabled selected hidden>Choisissez l'action</option>
+    <option class="ajouter" value="a_refuge">ajouter</option>
+    <option class="modifier" value="m_refuge">modifier</option>
+    <option class="supr" value="s_refuge">suprimer</option>
+ <input lass="envoyer" type="submit" value="envoyer" ><br><br>
+   </form>
+   <a class="button" href="../gauche.html">menu Principal</a>
+  </section>
+  
+  <section class="footer">
+    <div>
+      <ul>
+        <li><a href="../gauche.html">menu Principal</a></li>
+        <li><a href="../liste.html">blog</a></li>
+        <li><a href="../formulaire/formulaire_chat.html">chat</a></li>
+        <li><a href="../formulaire/formulaire_refuge.html">refuge</a></li>
+    </ul>
+    </div>
+    
+    <div>
+     <a href="https://www.facebook.com/"><img class="logo" src="../../img/logo-facebook.svg" alt=""></a> 
+     <a href="https://www.instagram.com/"><img class="logo" src="../../img/logo-instagram.svg" alt=""></a> 
+     <a href="../formulaire/formulaire_refuge.html"> <img class="logo" src="../../img/person-add-outline.svg" alt=""></span></a> 
+     <a href="../connexion/connexion_refuge.html"> <img class="logo" src="../../img/person-outline.svg" alt=""></span></a> 
+    
+    </div>
+    </section>
+</body>
+  </html>
+ 

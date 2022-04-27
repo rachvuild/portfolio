@@ -1,0 +1,60 @@
+.containe{
+    padding : 50% 10%;
+    margin: 20px;
+  }
+  .hero{
+      background-image: url("https://cdn.shopify.com/s/files/1/1097/6486/files/Marjo_1944x.jpg?v=1615501607") ;
+  height:100vh;
+    background-size:cover;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+     justify-content:center;
+  }
+    
+  .polo{
+   display: flex;
+    flex-direction: column;
+        align-items: center;
+  }
+  .card  {
+   display: flex;
+    justify-content:center;
+     margin: 20px;
+    Width: 40%;
+  }
+  img {
+    
+    width:200px;
+    height: 200px;
+    margin: 20px 20px;
+    
+  }
+  .footer{
+    background-color: #222222;
+    height:120vh;
+    width:auto;
+   
+  }
+  .imgfooter{ 
+  width:50px;
+     margin:10px;
+  
+  }
+  .footerreseau{
+     display: flex;
+    flex-direction: column;  
+          align-items: end;
+  }
+  
+  .titrefooter{ 
+  display: flex;
+    justify-content:center;
+   color:white;
+  }
+  .herotext{  
+   display: flex;
+    justify-content:center;
+  align-items: center;
+    color:white;
+  }

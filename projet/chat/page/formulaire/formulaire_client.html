@@ -1,0 +1,76 @@
+<html >
+<head>
+
+ 
+  <link rel="stylesheet" href="../../css/connexion.css">
+
+
+     
+</head>
+
+<body>
+  <section class="headers">
+  
+    <div class=" headers">
+      <div class="heads">
+        <a class="button" href="../admin.html">espace admin</a>
+    <h1>s'inscrire</h1>
+    </div>
+    <div class="heade">
+     
+      <a class="button" href="../connexion/connexion_client.html">se connecter</a>
+
+     
+    </div>
+    </div>
+  </section>
+<section class="formulaire">
+  <form method=POST action="../../php/formulaire/formulairephp_client.php">
+    <label for="pseodo">Entrez un pseodo (4 a 10 caractère)</label><br>
+    <input type="text" name="pseodo" required
+    minlength="4" maxlength="10" id="pseodo"><br><br>
+    <label for="password">Entrez un mot de passe (8 a 16 caractère)</label><br>
+    <input type="password" name="password" required
+    minlength="8" maxlength="16" id="password"><br><br>
+  <label for="nom_client">Entrez un nom</label><br>
+  <input type="text" name="nom_client" id="nom_client"><br><br>
+  <label for="prenom_client">Entrez un prennom</label><br>
+  <input type="text" name="prenom_client" id="prenom_client"><br><br>
+  <label for="mail_client">Entrez une adresse e-mail</label><br>
+  <input type="text" name="mail_client" id="mail_client"><br><br>
+  <label for="telephone_client">Entrez un numero de telephone</label><br>
+  <input type="text" name="telephone_client" id="telephone_client"><br><br>
+  <label for="num_client">Entrez le numero du client </label><br>
+  <input type="number" name="num_client" id="num_client"><br><br>
+  <label for="action_client">Entrez sa ajouter/ modifier?</label>
+  <select name="action_client" id="action_client" required>
+    <option class="num_client" value="" disabled selected hidden>Choisissez l'action</option>
+    <option class="ajouter" value="a_client">ajouter</option>
+    <option class="modifier" value="m_client">modifier</option>
+    <option class="supr" value="s_client">suprimer</option>
+    <a href="formulaire_chat"><input class="envoyer"  type="submit" value="envoyer" ><br><br>
+   </form>
+   <a class="button" href="../gauche.html">menu Principal</a>
+  </section>
+  
+  <section class="footer">
+    <div>
+      <ul>
+        <li><a href="../gauche.html">menu Principal</a></li>
+        <li><a href="../liste.html">blog</a></li>
+        <li><a href="../formulaire/formulaire_chat.html">chat</a></li>
+        <li><a href="../formulaire/formulaire_refuge.html">refuge</a></li>
+    </ul>
+    </div>
+    
+    <div>
+     <a href="https://www.facebook.com/"><img class="logo" src="../../img/logo-facebook.svg" alt=""></a> 
+     <a href="https://www.instagram.com/"><img class="logo" src="../../img/logo-instagram.svg" alt=""></a> 
+     <a href="../formulaire/formulaire_client.html"> <img class="logo" src="../../img/person-add-outline.svg" alt=""></span></a> 
+     <a href="../connexion/connexion_client.html"> <img class="logo" src="../../img/person-outline.svg" alt=""></span></a> 
+    
+    </div>
+    </section>
+</body>
+  </html>
+ 

@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
+html{
+  background-color: rgb(255, 255, 255);
+  filter: invert(100%)!important;
+  
+}
+html p a h1 h2{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.5;
+}
+.contenaire{
+  line-height: 1.5;
+}
+.name{
+  z-index: 100;
+  transform: rotate(90deg) ;
+  height: 20%;
+  width: 100vh;
+  position: fixed;
+top: 287px;
+
+  left:-292px;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255)!important;
+  border:1px groove black;
+  transition: all 1.5s;
+}
+.name:hover{
+height: 100%;
+background-color: white;
+top: auto;
+display: flex;
+  justify-content:  start;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+.droit{
+  position:relative;
+  top: 35vh;
+}
+.name:hover .droit{
+  transform: rotate(-90deg) ;
+  position: relative;
+  bottom: end;
+left: 30vh;
+top: -5vh;
+}
+.skyll{
+  opacity: 0;
+  transition: opacity 0.5s 1s;
+}
+.name:hover .skyll{
+  opacity: 1;
+}
+.boite{
+  background-color: rgba(0, 0, 0, 0);
+  width: 80%;
+  height: 20px;
+  border:1px groove black;
+  display: flex;
+  align-items: center ;
+}
+
+.list{
+  position: fixed;
+  top:0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255)
+}
+.projet{
+  width: 30vh;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  border:1px groove black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.5s;
+ 
+}
+.projet:hover{
+
+  border-width: 2px;
+  border-color: black ;
+  
+}
+
+a{
+  color: black;
+  text-decoration:none;
+  
+}
+.fleche{
+  display: flex;
+align-items: center;
+
+}
+.fleches{
+ 
+  opacity:0;
+  transition: opacity 0.5s;  
+}
+
+.projet:hover img{
+  margin: 5px ;
+  opacity:1;
+
+}
+
+.disgn{
+  position: relative;
+  margin: 20px ;
+
+  left: 150px;
+  
+}
+.flechebas{
+  margin: 5px;
+}
+.paper{
+  width: 20px; 
+  height: 20px;
+  margin: 5px;
+}
+.moi{
+display: flex;
+
+flex-direction: column;
+align-items: center;
+width: 110vh;
+position:relative;
+left: 300px;
+background-color: rgb(255, 255, 255);
+}
+.number{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  
+}
+.liste{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  justify-content: start;
+
+
+}
+.contenaire{
+  display: flex;
+
+}
+.pan{
+  display: flex; 
+  flex-direction: column;
+
+}
+
+h3{
+  font-size: 15px; 
+  width:100px ;
+}
+p{
+  font-size: 30px; 
+}
+h2{
+  font-size: 14px; 
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.skill{
+  text-align: right;
+  font-size: 13px;
+
+}
+
+.htmlcss, .adobe, .php, .python, .english, .sql{
+  width: 0px;
+  transition: all 1.5s 0.5s;
+}
+.name:hover .htmlcss{
+  width: 50%;}
+
+  .name:hover .php{
+  width: 30%;
+}
+
+.name:hover .sql{
+  width: 50%;
+}
+
+.name:hover .python{
+  width: 30%;
+}
+
+.name:hover .adobe{
+  width: 50%;
+}
+
+.name:hover .english{
+  width: 20%;
+}
+/* pour telephone .. */
+@media (max-width: 768px) {
+  .olny_ordi{
+   display: none;
+  }
+  .olny_mobile{
+    display: block;
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
+html p a h1 h2{
+    font-family: 'Montserrat', sans-serif;
+    padding-right:30vh;
+  }
+  
+.menu{
+
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    border-bottom: solid 2px black;
+    
+}
+
+.name{
+ 
+    height: 20% ;
+    width:100% ;
+}
+
+  
+  .burger{
+      height: 50px;
+  }
+  .number{
+      height: 40px ;
+      margin: 25px ;
+  }
+  .liste{
+      display: flex;
+      align-items: center;
+      font-size: 50px ;
+
+  }
+  .fleche{
+      
+    display: flex;
+    align-items: center;
+    font-size: 50px ;
+    
+
+}
+.projets{
+    height: 200px;
+    border-top: solid 2px black;
+    color: black;
+}
+.fleches{
+    margin: 25px;
+}
+
+.paper{
+    height: 40px;
+    margin: 25px;}
+    h1{
+        font-size: 60px;
+    }
+h2{
+    font-size: 50px;
+}
+.flechebas{
+    margin: 25px;
+}
+a{ color: black;
+    text-decoration:none;
+}
+.skyll{
+    font-size: 40px;
+}
+.boite{
+    background-color: rgba(0, 0, 0, 0);
+    width: 80%;
+  
+    border:2px groove black;
+    display: flex;
+    align-items: center ;
+  }
+  .skill{
+    text-align: right;
+  
+  
+  }
+.htmlcss, .adobe, .php, .python, .english, .sql{
+    width: 0px;
+    transition: all 1.5s 1.5s;
+  }
+  .htmlcss{
+    width: 50%;}
+  
+    .php{
+    width: 30%;
+  }
+  
+ .sql{
+    width: 50%;
+  }
+  
+ .python{
+    width: 30%;
+  }
+  
+ .adobe{
+    width: 50%;
+  }
+  
+ .english{
+    width: 20%;
+  }
+  .moi{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+  }
+ }
+
+
+
+
+/* pour ordi .. */
+@media (min-width: 769px) { 
+
+  .olny_ordi{
+    display: block;
+   }
+   .olny_mobile{
+     display: none;
+    }
+ 
+}

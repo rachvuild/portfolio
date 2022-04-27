@@ -1,0 +1,74 @@
+<html >
+<head>
+
+ 
+  <link rel="stylesheet" href="../../css/connexion.css">
+  <script src="chat.js" defer></script>
+     
+</head>
+
+<body>
+  <section class="headers">
+  
+    <div class=" headers">
+      <div class="heads">
+        <a class="button" href="../admin.html">espace admin</a>
+    <h1>le chat</h1>
+    </div>
+    <div class="heade">
+     
+      <a class="button" href="connexion_client.html">se connecter</a>
+      <a class="button" href="formulaire_client.html">s'inscrire</a>
+     
+    </div>
+    </div>
+  </section>
+  <section class="formulaire">
+  <form method="POST" action="../../php/formulaire/formulairephp_chat.php">
+
+    <label for="nom_chat">Entrez un nom</label>
+    <input type="text" name="nom_chat" id="nom_chat"><br><br>
+    <label for="prenom_chat">Entrez un prennom</label>
+    <input type="text" name="prenom_chat" id="prenom_chat"><br><br>
+    <label for="naissence_chat">Entrez un date de naissence </label>
+    <input type="date" name="naissence_chat" id="naissence_chat"><br><br>
+    <label for="race">Entrez sa race</label>
+    <input type="text" name="race" id="race"><br><br>
+    <label for="num_chat">Entrez le numero du chat </label><br>
+    <input type="number" name="num_chat" id="num_chat"><br><br>
+  
+  
+  <label for="action_chat">Entrez sa ajouter/ modifier?</label>
+  <select name="action_chat" id="action_chate" required>
+    <option class="num_chat" value="" disabled selected hidden>Choisissez l'action</option>
+    <option class="ajouter" id="ajouter" value="a_chat">ajouter</option>
+    <option class="modifier" id="modifier" value="m_chat">modifier</option>
+    <option class="supr" id="supr" value="s_chat">suprimer</option>
+    <option class="voir" value="v_chat">voir tous les chat</option>
+  <div class="num_chat" ></div>
+ </select><br><br>
+ <input lass="envoyer"  type="submit" for="chaton" value="envoyer" >
+  <br><br>
+   </form></section>
+   <section class="footer">
+    <div>
+      <ul>
+        <li><a href="../gauche.html">menu Principal</a></li>
+        <li><a href="../liste.html">blog</a></li>
+        <li><a href="../formulaire/formulaire_chat.html">chat</a></li>
+        <li><a href="../formulaire/formulaire_refuge.html">refuge</a></li>
+    </ul>
+    </div>
+    
+    <div>
+     <a href="https://www.facebook.com/"><img class="logo" src="../../img/logo-facebook.svg" alt=""></a> 
+     <a href="https://www.instagram.com/"><img class="logo" src="../../img/logo-instagram.svg" alt=""></a> 
+     <a href="../formulaire/formulaire_client.html"> <img class="logo" src="../../img/person-add-outline.svg" alt=""></span></a> 
+     <a href="../connexion/connexion_client.html"> <img class="logo" src="../../img/person-outline.svg" alt=""></span></a> 
+    
+    </div>
+    </section>
+</body>
+
+  </html>
+ 
