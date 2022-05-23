@@ -206,16 +206,13 @@ h2{
 }
 /* pour telephone .. */
  
-.olny_ordi{
-  display: block;}
- 
-   
-  
-
-     .olny_mobile{
-    display: none;
+@media (max-width: 768px) {
+  .olny_ordi{
+   display: none;
+  }
+  .olny_mobile{
+    display: block;
    }
-  
  
    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
 html p a h1 h2{
