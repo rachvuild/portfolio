@@ -205,7 +205,7 @@ h2{
   width: 20%;
 }
 /* pour telephone .. */
-@media (max-height: 768px) {
+@media (max-width: 768px) {
 .olny_ordi{
   display: none;}
  
