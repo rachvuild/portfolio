@@ -51,7 +51,7 @@ ul {
 .projet{
   width: 100vw;
   height: 100vh;
-  background-color: #211830;
+  background-color: var(--color1);
   overflow-y: scroll;
   display: flex;
   justify-content: end;
