@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "help",
+    "response": " <span class='spancommande'>about</span>          Learn more about me <br/> <span class='spancommande'>works </span>          Show my works <br/><span class='spancommande'> social   </span>       Displays social networks <br/><span class='spancommande'>contact </span>        Get my email <br/><span class='spancommande'>credits </span>        Show the credits <br/><span class='spancommande'>download </span>       Download TerminalPortfolio"
+  },
+  {
+    "condition": "--version",
+    "response": "1.0"
+  },
+  {
+    "condition": "--status",
+    "response": "OK"
+  }
+]
