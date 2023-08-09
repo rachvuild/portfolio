@@ -48,10 +48,6 @@ export default function Projet({ projetInfo ,hoverProjet}) {
         
         div.style.boxShadow = `${positionRight}px ${positionDown}px  20px 0px #dfe2e7`
         
-      }else{
-        console.log('pol');
-        div.style.transform = `rotateY(0deg) rotateX(0deg) `;
-        div.style.boxShadow = `0px 0px  0px 0px #dfe2e7`
       }
    
     }
