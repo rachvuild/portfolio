@@ -13,7 +13,7 @@ export default function Terminal({ terminal, setTerminal }) {
     var ter = document.getElementById("terminal");
     setTimeout(() => {
       ter.scrollTop = ter.scrollHeight;
-      console.log(ter.scrollHeight);
+    
     }, 0);
   }
 

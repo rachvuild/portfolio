@@ -52,39 +52,60 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: var(--color1);
-  overflow-y: scroll;
+ 
   display: flex;
   justify-content: end;
   
-}
-.projets{
-  display: flex;
-  flex-wrap: wrap;
-  width: 70vw;
 }
 h4{
 margin: 0;
   transition: transform 0.3s ease;
 }
+.projets{
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 5%; 
+  width: 70vw;
+
+}
+.columProjet{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: start;
+}
 .hoverProjet{
   width: 27vw;
   font-size: 3vw;
+  height: 100%;
+  z-index: 0;
 }
 .conternaireProjet{
+  width: 15vw;
+  margin: 5%;
   position: relative;
   overflow: hidden;
-  width: 20vw;
-  height: 20vw;
   border-radius: 1rem;
-margin: 0.5%;
+  z-index: 1;
+  
 }
+.conternaireProjet.gros {
+  height: 30vw;
+}
+.conternaireProjet.petit {
+  height: 15vw;
+}
+/* .conternaireProjet:hover{
+  box-shadow: 0px 0px 22px 14px var(--color2);
+} */
 .liProjet {
   position: relative;
   font-size: 3vw;
   
   list-style: none;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.75s;
 
   object-fit: cover;
  
@@ -95,24 +116,24 @@ margin: 0.5%;
 
 }
 .blur{
-  opacity: 0;
   position: absolute;
-  
   top:0;
   left: 0;
-  width: 15vw;
-  height: 20vw;
-  background-color: rgba(255, 255, 255, 0.2); /* Couleur du verre avec transparence */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure transparente */
-  border-radius: 10px;
-  overflow: hidden; /* Permet de cacher le contenu qui dépasse */
-
-
-  /* Filtre pour déformer l'image à l'intérieur du verre */
-  filter: blur(5px) brightness(90%) contrast(120%) sepia(10%) saturate(200%);
-  
-  /* Filtre pour créer l'effet de verre */
-  backdrop-filter: blur(10px) brightness(110%) contrast(150%) saturate(120%);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  filter: blur(100px);
+  overflow: hidden;
+}
+.round{
+width: 7vw;
+height: 7vw;
+border: solid 200px rgba(0, 0, 0, 0);
+border-radius: 50%;
 }
 .containt-h2 {
   margin-top: 2.5%;
@@ -147,7 +168,28 @@ h3 {
   transition: all 0.75s 0.1s;
   z-index: -1;
 }
+.backProjet{
+  cursor: pointer;
+position: fixed;
+top :3vw;
+right: 3vw;
+  width: 4vw;
+  height: 4vw;
+  transform: rotate(-90deg);
+  transition: all 0.75s 0.1s;
+  z-index: 1;
+  
+  border-radius: 50%;
+  display: none;
+  place-items: center;
+  border: solid var(--color2) 0.2vw;
+  
+}
+.backProjet h4 {
+  width: 80%;
+  height: 80%;
 
+}
 .containt-h2:hover .back {
   width: 100%;
 }
@@ -167,8 +209,10 @@ hr {
   border-radius: 3cap 0 0 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
+  
+ 
   color: var(--color2);
+
 }
 
 .propre::before {
@@ -184,6 +228,9 @@ hr {
   border-radius: 3em 0 0 0;
   transform-origin: bottom left;
   animation: drawBorder 1.5s linear;
+  
+  /* box-shadow: inset 0 0 0.5em var(--color2), 0 0 0.5em var(--color2); */
+ 
 }
 
 @keyframes drawBorder {
@@ -252,6 +299,7 @@ hr {
   padding-top: 3%;
   background-color: var(--color2);
   color: var(--color1);
+  box-shadow: inset 0px 0px 1em var(--color1);
 }
 .imgprojet {
   height: 50vh;
@@ -263,9 +311,8 @@ hr {
   margin-left: 1vh;
   width: 98vw;
   height: 98vh;
-  border: 4px #000 outset;
+  border: 4px var(--color2) outset;
   background-color: var(--color1);
-  background-color: #c0c0c0;
   top: 0;
   left: 0;
   display: flex;
@@ -278,7 +325,7 @@ hr {
 .terminal {
   height: 96%;
   width: 99%;
-  background-color: var(--terminalboder);
+  background-color: var(--color1);
   display: flex;
   flex-direction: column;
   justify-content: start;

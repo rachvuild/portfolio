@@ -41,6 +41,11 @@ export default function FormTerminal({
           if (newLines === "travaux") {
           }
           if (newLines === "contact") {
+          }else{
+            copiLines.push(
+              "<span class='spancommande'>'"+newLines+"'n’est pas reconnu en tant que commande interne <br/> ou externe, un programme exécutable ou un fichier de commandes. 'help' </span>"
+            );
+            setline(copiLines);
           }
         } else {
           const copiLines = [...lines];
@@ -48,14 +53,14 @@ export default function FormTerminal({
           setline(copiLines);
         }
         scrollToBottom();
-        console.log("Appui sur la touche Entrée");
+        
         setNewLines("");
       }
 
       if (event.keyCode === 8) {
         // Touche Retour (Backspace)
         setNewLines((prevLines) => prevLines.slice(0, -1));
-        console.log("Appui sur la touche Retour");
+       
       }
     };
 
