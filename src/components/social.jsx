@@ -1,9 +1,12 @@
-export default function Social({ socialInfo }) {
-    function copy() {
+export default function Social({ socialInfo,setSocial }) {
+    function copy(socialInfo) {
             navigator.clipboard.writeText('axel.dochezmz5@gmail.com');
+            
+            setSocial(socialInfo);
+            
     }
 
-    if (socialInfo[0] != false) {
+    if (socialInfo[0] !== false) {
     return (
 
         <div className="adroit propre">
@@ -13,16 +16,16 @@ export default function Social({ socialInfo }) {
       </div>
       <h3>Social</h3>
      <div className='socialContainte'>
-     <a className="imgsocial" onClick={() => copy()} >
+     <a className="imgsocial" title="axel.dochezmz5@gmail.com" onClick={() => copy(socialInfo)} >
         <img className="imgsocial" src="img/email.png" alt="" />
-
         </a> 
 {
+    
     socialInfo.map((social) => (
-        <a className="imgsocial" href={social.site}>
+        <a className="imgsocial" title={social.nom} href={social.site}>
         <img className="imgsocial" src={social.url} alt="" />
-
         </a>
+        
     ))
 }
      </div>

@@ -1,0 +1,185 @@
+{
+"projects":[
+    {
+        "id": 1,
+        "nom": "GSB",
+        "description": "gros",
+        "illustration": "img/logo_GSB.png",
+        "couleur":"4f81bd",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web,développement Mobile "
+          },
+          {
+            "name":"GROUPE",
+            "description":"4 personnes"
+          },
+          {
+            "name":"TECHNOLOGIE",
+            "description":"PHP CSS MYSQL,AndroidStudio JAVA, Github"
+          },
+          {
+            "name":"DATE",
+            "description":"2022-2023"
+          }
+        ],
+        "synthèse":"Galaxy Swiss Bourdin (GSB) est une industrie spécialisée dans la recherche et la production de nouvelle molécules et médicaments, Cette application est conçue pour faciliter le travail des commerciaux. Elle leur permet de planifier des rendez-vous avec des clients existants et potentiels. Une fois le rendez-vous réalisé, l'application permet aux commerciaux de créer des comptes-rendus. Ces comptes-rendus comprennent des informations telles que la remise d'échantillons de médicaments et les commentaires du client pour indiquer s'il est intéressé par les produits ou non. ",
+        "detail": [
+            {
+                "name":"Login",
+                "img":[
+                    {"url":"img/projet/gsb/login.png"}
+                ]
+            },
+            {
+                "name":"home page",
+                "img":[
+                    
+                ]
+            }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "ContraBureau",
+        "description": "petit",
+        "illustration": "img/chat.png",
+        "couleur":"e8dcce",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web"
+          },
+          {
+            "name":"TECHNOLOGIE",
+            "description":"HTLM CSS JavaScript"
+          },
+          {
+            "name":"DATE",
+            "description":"2023"
+          }
+        ],
+        "synthèse":"'ContraBureau' est un site web conçu par Victor Work, qui a été présenté sur le site Awwwards. J'ai entrepris de recréer une partie de ce site dans le but d'acquérir de nouvelles compétences et d'en apprendre davantage sur la conception web. Cette démarche d'apprentissage vise à développer mes compétences en design et en développement web en m'inspirant d'un projet de haute qualité tel que 'ContraBureau'.",
+        "detail": [
+          {
+            "name":"Login",
+            "img":[
+                {"url":""}
+            ]
+        }
+        ]
+      }
+      ,
+      {
+        "id": 3,
+        "nom": "Button",
+        "description": "petit",
+        "illustration": "img/projet-btn.png",
+        "couleur":"2d2f34",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web"
+          },
+         
+          {
+            "name":"TECHNOLOGIE",
+            "description":"HTLM CSS JavaScript"
+          },
+          {
+            "name":"DATE",
+            "description":"2022"
+          }
+        ],
+        "synthèse":"Le projet 'Button' est une initiative qui rassemble diverses expérimentations de conception de boutons, en mettant l'accent sur l'utilisation de techniques telles que la reproduction de boutons, le reumorphisme (utilisation d'effets de design pour simuler des boutons réalistes), et l'effet parallaxe. Tout cela est réalisé en utilisant exclusivement les langages de programmation web HTML, CSS et JavaScript.",
+        "detail": [
+
+        ]
+      },
+      {
+        "id": 4,
+        "nom": "Stage",
+        "description": "gros",
+        "illustration": "img/stage.jpg",
+        "couleur":"261c2e",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web"
+          },
+          {
+            "name":"Entreprise",
+            "description":"Science Po"
+          },
+          {
+            "name":"TECHNOLOGIE",
+            "description":"synfony 5.4, React.js PHP Git, Linux "
+          },
+          {
+            "name":"DATE",
+            "description":"2022 , 2023"
+          }
+        ],
+        "synthèse":"Au cours de mes deux stages à Sciences Po, j'ai développé des compétences significatives en programmation. Lors de mon premier stage, j'ai créé une application web sous Symfony, mettant en place des fonctionnalités de création et de gestion d'utilisateurs. Par la suite, ma première mission a été de concevoir des tests unitaires pour assurer la stabilité de l'application lors de futures modifications. J'ai également réalisé une refonte visuelle réussie pour une autre application. Lors de mon deuxième stage, j'ai été chargé d'intégrer une nouvelle fonctionnalité dans une application préexistante, nécessitant l'apprentissage de React et la maîtrise de la gestion des API. Ma mission principale a été de moderniser une application obsolète, complexe et boguée. Pour atteindre cet objectif, j'ai simplifié et optimisé l'ensemble de l'application tout en introduisant de nouvelles fonctionnalités. Ces expériences m'ont permis d'acquérir des compétences en développement web, en gestion de projets et en résolution de problèmes complexes, renforçant ainsi ma capacité à apporter des solutions efficaces dans le domaine de la programmation.",
+        "detail": [
+
+        ]
+      }
+      ,
+      {
+        "id": 5,
+        "nom": "EFS",
+        "description": "gros",
+        "illustration": "img/logo_efs.png",
+        "couleur":"0f1c5a",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web"
+          },
+          {
+            "name":"GROUPE",
+            "description":"5 personnes"
+          },
+          {
+            "name":"TECHNOLOGIE",
+            "description":"PHP CSS MYSQL,Github"
+          },
+          {
+            "name":"DATE",
+            "description":"2022"
+          }
+        ],
+        "synthèse":"Lors d'une journée de workshop et de sensibilisation au don du sang à l'Établissement Français du Sang, vous avez été chargé de créer une extension pour leur site web. L'objectif principal de cette extension était de fidéliser les donneurs de sang existants et d'inciter de nouvelles personnes à donner. Pour ce faire, un système de récompenses, inspiré des jeux vidéo, a été mis en place, utilisant des badges en fonction du nombre de dons effectués ou de vies sauvées. Cette approche innovante vise à motiver les donneurs tout en suscitant l'intérêt de nouveaux participants pour le don de sang, contribuant ainsi à sauver des vies. ",
+        "detail": [
+
+        ]
+      },
+      {
+        "id": 6,
+        "nom": "Chat",
+        "description": "petit",
+        "illustration": "img/chat.png",
+        "couleur":"e77487",
+        "catergorie":[
+          {
+            "name":"CATEGORIE",
+            "description":"développement web"
+          },
+          {
+            "name":"TECHNOLOGIE",
+            "description":"PHP CSS MYSQL"
+          },
+          {
+            "name":"DATE",
+            "description":"2022"
+          }
+        ],
+        "synthèse":"le Chalalaland est la pour la mise en relation entre les refuges pour chat, les chat et les adopteurs. il était possible au refuge de inscrire des chats et leurs race et les adopteurs pour voir les chat et les triés par race.cette application était la pour nous apprandre les bases pour le PHP et le Mysql. ",
+        "detail": [
+
+        ]
+      }
+    ]
+}

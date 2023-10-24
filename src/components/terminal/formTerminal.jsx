@@ -27,25 +27,30 @@ export default function FormTerminal({
 
           copiLines.push("C:\\Users\\Root>" + newLines);
 
-          if (newLines === "help") {
-            copiLines.push(
-              "<span class='spancommande'>AxelDochez</span>          Learn more about me <br/> <span class='spancommande'>travaux </span>          Show my works <br/><span class='spancommande'> contact   </span>       Displays social networks <br/><span class='spancommande'>leave </span>        Get my email <br/><span class='spancommande'>credits </span>        Show the credits <br/><span class='spancommande'>download </span>       Download TerminalPortfolio"
-            );
-            setline(copiLines);
-          }
-          if (newLines === "leave") {
-            setTerminal(false);
-          }
-          if (newLines === "AxelDochez") {
-          }
-          if (newLines === "travaux") {
-          }
-          if (newLines === "contact") {
-          }else{
-            copiLines.push(
-              "<span class='spancommande'>'"+newLines+"'n’est pas reconnu en tant que commande interne <br/> ou externe, un programme exécutable ou un fichier de commandes. 'help' </span>"
-            );
-            setline(copiLines);
+          switch (newLines) {
+            case "help":
+              copiLines.push(
+                "<span class='spancommande'>AxelDochez</span>          Learn more about me <br/> <span class='spancommande'>travaux </span>          Show my works <br/><span class='spancommande'> contact   </span>       Displays social networks <br/><span class='spancommande'>leave </span>        Get my email <br/><span class='spancommande'>credits </span>        Show the credits <br/><span class='spancommande'>download </span>       Download TerminalPortfolio"
+              );
+              setline(copiLines);
+              break;
+            case "leave":
+              setTerminal(false);
+              break;
+            case "AxelDochez":
+              // Code à exécuter lorsque newLines est égal à "AxelDochez"
+              break;
+            case "travaux":
+              // Code à exécuter lorsque newLines est égal à "travaux"
+              break;
+            case "contact":
+              // Code à exécuter lorsque newLines est égal à "contact"
+              break;
+            default:
+              copiLines.push(
+                "<span class='spancommande'>'" + newLines + "' n’est pas reconnu en tant que commande interne <br/> ou externe, un programme exécutable ou un fichier de commandes. 'help' </span>"
+              );
+              setline(copiLines);
           }
         } else {
           const copiLines = [...lines];

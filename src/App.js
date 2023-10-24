@@ -1,12 +1,14 @@
 
 import './App.css';
-import { useState ,useRef,useEffect } from "react";
+import { useState ,useRef } from "react";
 
 
-import Project from "./components/projets";
+import Project from "./components/projet/projets";
+import AllProjectsJson from "./components/json/projets.json";
+import ProjetInfo from "./components/projet/projetInfo";
 import ADroit from "./components/adroit";
 import Social from "./components/social";
-import Terminal from "./components/terminal";
+import Terminal from "./components/terminal/terminal";
 export default function App() {
   // state (état, données)
   
@@ -17,7 +19,8 @@ export default function App() {
   const [projetH, setprojetH] = useState("");
   const [moveProjet, setmoveProjet] = useState(0);
   const animationRef = useRef();
-  
+  const [takeProjet, setTakeProjet] = useState([false]);
+  const projetsSansNiveauSuperieur = AllProjectsJson.projects;
   
   // comportements
   function afficheMoi(id) {
@@ -50,6 +53,7 @@ export default function App() {
         setAdroits([false]);
       }
     }
+    
     if (id === 2) {
       setSocial([false])
       setAdroits([false]);
@@ -57,85 +61,26 @@ export default function App() {
       
         const backProjet = document.getElementById('backProjet');
         const copieprojet = [];
-        copieprojet.push(
-          {
-            id: 1,
-            nom: "GSB",
-            description: "gros",
-            image: "",
-            url: "img/gsb.png"
-          },
-          {
-            id: 2,
-            nom: "ContraBureau",
-            description: "petit",
-            image: "",
-            url: "img/chat.png"
-          }
-          ,
-          {
-            id: 7,
-            nom: "ContraBureau",
-            description: "gros",
-            image: "",
-            url: "img/chat.png"
-          }
-          ,
-          {
-            id: 3,
-            nom: "button",
-            description: "petit",
-            image: "",
-            url: "img/chat.png"
-          },
-          {
-            id: 4,
-            nom: "Stage",
-            description: "gros",
-            image: "",
-            url: "img/stage.jpg"
-          },
-          {
-            id: 7,
-            nom: "ContraBureau",
-            description: "petit",
-            image: "",
-            url: "img/chat.png"
-          }
-          ,
-          {
-            id: 5,
-            nom: "EFS",
-            description: "gros",
-            image: "",
-            url: "img/esf.png"
-          },
-          {
-            id: 6,
-            nom: "Chat",
-            description: "petit",
-            image: "",
-            url: "img/chat.png"
-          },
-          {
-            id: 7,
-            nom: "ContraBureau",
-            description: "gros",
-            image: "",
-            url: "img/chat.png"
-          }
-          ,
-        );
+        
+       
+          projetsSansNiveauSuperieur.map((rowProjet)=>(
+            copieprojet.push(rowProjet )
+            
+          ));
+         
+          
+       
         const taillePartie = Math.ceil(copieprojet.length / 3);
 const tableauprojet = [
   copieprojet.slice(0, taillePartie),
   copieprojet.slice(taillePartie, taillePartie * 2),
   copieprojet.slice(taillePartie * 2)
 ];
-// console.log(tableauprojet);
+
         setprojets(tableauprojet);
         backProjet.style.display = 'grid';
       } else {
+        
         setprojets([false]);
       }
     }
@@ -204,32 +149,18 @@ const tableauprojet = [
   
   }
   function backHome(e) {
+    
     const backProjet = document.getElementById('backProjet');
     backProjet.style.display = 'none';
     setprojets([false]);
   
   }
   
-    useEffect(() => {
-      const element = document.getElementById('poool');
-      element.addEventListener('scroll', handleScroll);
-      return () => {
-        element.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-    const handleScroll = (event) => {
-      const element = event.target;
-      const scrollSpeed = element.scrollTop; // Récupère la vitesse du scroll
-  
-      // Applique l'effet de perspective basé sur la vitesse du scroll
-      // element.classList.add('scroll-effect');
-      // element.style.transform = `perspective(${scrollSpeed}px)`;
-    };
-  
+
   // affichage (render)
   return (
-    <div className='bodyall' id='home'>
-       <div className='home' >
+    <div className='bodyall' >
+       <div className='home' id='home'>
       <div className="name">
         <h1 onClick={() => afficheMoi(4)}>Axel Dochez-Lesur</h1>
         <p>Developper Web junior</p>
@@ -244,8 +175,8 @@ const tableauprojet = [
             <h2>Moi</h2>
             <hr />
           </div>
-          {<ADroit adroit={adroits} />}
         </div>
+          {<ADroit adroit={adroits} />}
         <a href='#projet' onClick={() => afficheMoi(2)} className="info">
           <div className="containt-h2">
             <div className="back"></div>
@@ -262,23 +193,28 @@ const tableauprojet = [
             <h2>Social</h2>
             <hr />
           </div>
+        </div>
           <Social 
            key={social.id}
            socialInfo={social}
+           setSocial={setSocial}
           />
-        </div>
       </nav>
       </div>
+
+      {/* projet */}
+      <div className='allProjetContenaire'>
       <div id='projet' className='projet' onMouseMove={(e) => movemouse(e)  } >
    <div className='hoverProjet '>
    <h4 style={{ transform: `translateY(${moveProjet}px)` }}>Projet:{projetH}</h4>  
    </div>
-   <div id='poool' className='projets' >
-{/* {console.log(projets)} */}
+   <div className='projets' >
+
       {projets.map((rowProjet,index) => (
         <Project
         rowProjet={rowProjet}
         hoverProjet={hoverProjet}
+        setTakeProjet={setTakeProjet}
         key={index}
         />
         ))}
@@ -297,6 +233,13 @@ const tableauprojet = [
 </svg>
 </h4>
         </a>
+      </div>
+      <div className='commenteProjet' id='projetInfo' >
+        {<ProjetInfo
+        takeProjet={takeProjet}
+        key={takeProjet.id}
+        />}
+      </div>
       </div>
     </div>
   );
